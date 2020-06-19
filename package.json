@@ -1,0 +1,25 @@
+{
+  "name": "simple-android-forensics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp webserver",
+    "hotspot": "gulp hotspot-analysis --dateFrom=2020-03-01 --dateTo=2020-06-19",
+    "sloc-trend": "gulp sloc-trend-analysis --dateFrom=2019-06-01",
+    "sum-of-coupling": "gulp sum-of-coupling-analysis --dateFrom=2019-06-01",
+    "temporal-coupling": "gulp temporal-coupling-analysis --dateFrom=2019-06-01",
+    "system-evolution": "gulp system-evolution-analysis --timeSplit=1m --layerGroup=code-test --dateFrom=2019-06-01",
+    "developer-effort": "gulp developer-effort-analysis --dateFrom=2019-06-01",
+    "developer-coupling": "gulp developer-coupling-analysis --dateFrom=2019-06-01",
+    "knowledge-map": "gulp knowledge-map-analysis --dateFrom=2019-06-01",
+    "commit-message": "gulp commit-message-analysis --dateFrom=2019-06-01"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "code-forensics": "2.3.1",
+    "gulp": "4.0.2"
+  }
+}
